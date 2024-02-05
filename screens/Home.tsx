@@ -4,18 +4,20 @@ import { useAuthentication } from '../utils/hooks/useAuthentication';
 import { Button } from 'react-native-elements';
 import { getAuth, signOut } from 'firebase/auth';
 import { doc, updateDoc } from "firebase/firestore";
-import { auth, db } from '../config/firebase';
+import { db } from '../config/firebase';
 
-// const auth = getAuth();
+const auth = getAuth();
 
 export default function HomeScreen() {
     const { user } = useAuthentication();
-    const docRef = doc(db, "users", user.uid);
+    // alert(user);
+    
 
     async function updateUser() {
-        await updateDoc(docRef, {
-        lastLogin: new Date()
-        });
+      const docRef = doc(db, "users", user.uid);
+      await updateDoc(docRef, {
+      lastLogin: new Date()
+      });
     }
     updateUser();
     return (
