@@ -10,7 +10,7 @@ Currently I have set up a minimal UI that allows users to create an account usin
 
 ## Screen Recording of App
 
-![Screen 1](path/to/screen_1.png)
+![Screen 1](https://github.com/auan369/expo-with-firebase-typescript/blob/main/screenshots/appRecording.gif)
 
 <!-- ## Features
 
@@ -27,7 +27,7 @@ Currently I have set up a minimal UI that allows users to create an account usin
 ## Firebase Integration
 
 ### Authentication
-![Screen 2](path/to/screen_3.png)
+![Screen 2](https://github.com/auan369/expo-with-firebase-typescript/blob/main/screenshots/firebaseAuth.png)
 <!-- To enable Firebase Authentication, follow these steps:
 
 1. Create a Firebase project in the [Firebase Console](https://console.firebase.google.com/).
@@ -36,4 +36,4 @@ Currently I have set up a minimal UI that allows users to create an account usin
 4. Update the Firebase configuration in your app's code. -->
 
 ### Firestore Database
-![Screen 3](path/to/screen_3.png)
+![Screen 3](https://github.com/auan369/expo-with-firebase-typescript/blob/main/screenshots/firestoreDatabase.png)
