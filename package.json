@@ -19,7 +19,9 @@
     "expo-status-bar": "~1.11.1",
     "firebase": "^10.8.0",
     "react": "18.2.0",
+    "react-country-state-city": "^1.1.0",
     "react-native": "0.73.2",
+    "react-native-country-selector": "^1.0.7",
     "react-native-elements": "^3.4.3"
   },
   "devDependencies": {

@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { useAuthentication } from '../utils/hooks/useAuthentication';
+import { StackScreenProps } from '@react-navigation/stack';
 import { Button } from 'react-native-elements';
 import { getAuth, signOut } from 'firebase/auth';
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from '../config/firebase';
 
 const auth = getAuth();
-
-export default function HomeScreen() {
+const HomeScreen: React.FC<StackScreenProps<any>> = ({ navigation }) => {
     const { user } = useAuthentication();
     // alert(user);
     
@@ -26,6 +26,7 @@ export default function HomeScreen() {
         
 
         <Button title="Sign Out" style={styles.button} onPress={() => signOut(auth)} />
+        <Button title="Account" style={styles.button} onPress={() =>  navigation.navigate('Account')}/>
         </View>
     );
 }
@@ -41,3 +42,5 @@ const styles = StyleSheet.create({
     marginTop: 10
   }
 });
+
+export default HomeScreen;
